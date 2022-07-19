@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #393845;
+}
+/*Barra de navegacion*/
+.colorFondo{
+    background-color: #940315;
+}
+
+.fondo-card{
+    background-color: #9b96a34f;
+}
+
+.texto-total-carrito{
+    margin-left: 1rem;
+}
