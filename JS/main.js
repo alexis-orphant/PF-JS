@@ -49,7 +49,20 @@ for(const producto of productos) {
     const boton = document.getElementById(`boton-${producto.id}`);
     boton.addEventListener("click", () => {
         // alert de que se agrego al carrito
-        alert("El producto fue agregado al carrito");
+        // alert("El producto fue agregado al carrito");
+
+        Toastify({
+            text: "Producto agregado al carrito",
+            gravity: "bottom",
+            className: "info",
+            duration: 2000,
+            close: true,
+            className: "alerta",
+            style: {
+                background: "linear-gradient(to right, #EB0000, #B80000)",
+            }
+        }).showToast();
+
         
         // obtengo json del localStorage y lo parseo
         const carritoJson = localStorage.getItem("carrito");
